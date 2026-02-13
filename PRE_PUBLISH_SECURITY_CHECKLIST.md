@@ -1,6 +1,6 @@
 # Pre-Publish Security Checklist
 
-Run this checklist before every release to MoltHub/npm.
+Run this checklist before every release to ClawHub/npm.
 
 ## 1) Code and dependency safety
 

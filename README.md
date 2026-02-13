@@ -48,6 +48,7 @@ small local queue on disk if delivery fails and retries with exponential backoff
 
 ## Publishing assets
 
-- MoltHub listing draft: `MOLTHUB_LISTING_TEMPLATE.md`
+- ClawHub listing draft: `CLAWHUB_LISTING_TEMPLATE.md`
+- ClawHub release runbook: `CLAWHUB_PUBLISH_RUNBOOK.md`
 - Release checklist: `PRE_PUBLISH_SECURITY_CHECKLIST.md`
 - Vulnerability reporting: `SECURITY.md`

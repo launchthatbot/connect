@@ -1,6 +1,6 @@
-# MoltHub Listing Template (launchthat-openclaw-connector)
+# ClawHub Listing Template (launchthat-openclaw-connector)
 
-Use this template for your public package listing.
+Use this template for your public package listing on `https://clawhub.ai/`.
 
 ## Title
 
