@@ -2,6 +2,38 @@
 
 This runbook assumes your package is published to npm and listed in ClawHub.
 
+## 0) Monorepo -> Dedicated Repo Sync
+
+This package is developed in this monorepo under:
+
+- `packages/launchthat-openclaw-connector`
+
+And mirrored to:
+
+- `https://github.com/launchthatbot/connect.git`
+
+### Automated sync (recommended)
+
+- Workflow: `.github/workflows/sync-openclaw-connector-repo.yml`
+- Triggered on `main` pushes that touch the package path.
+- Requires repository secret:
+  - `CONNECT_REPO_PAT` (PAT with push access to `launchthatbot/connect`)
+
+### One-time bootstrap commands (local)
+
+```bash
+git remote add connector git@github.com:launchthatbot/connect.git
+git subtree split --prefix=packages/launchthat-openclaw-connector -b split/openclaw-connector
+git push connector split/openclaw-connector:main
+```
+
+### Manual sync fallback (local)
+
+```bash
+SPLIT_SHA="$(git subtree split --prefix=packages/launchthat-openclaw-connector main)"
+git push connector "${SPLIT_SHA}:main"
+```
+
 ## 1) Pre-flight
 
 - Ensure `README.md`, `SECURITY.md`, and `CLAWHUB_LISTING_TEMPLATE.md` are current.

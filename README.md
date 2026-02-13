@@ -52,3 +52,9 @@ small local queue on disk if delivery fails and retries with exponential backoff
 - ClawHub release runbook: `CLAWHUB_PUBLISH_RUNBOOK.md`
 - Release checklist: `PRE_PUBLISH_SECURITY_CHECKLIST.md`
 - Vulnerability reporting: `SECURITY.md`
+
+## Repository topology
+
+- Source of truth: monorepo path `packages/launchthat-openclaw-connector`
+- Dedicated public repo mirror: `https://github.com/launchthatbot/connect.git`
+- Automated mirror sync workflow: `.github/workflows/sync-openclaw-connector-repo.yml`
