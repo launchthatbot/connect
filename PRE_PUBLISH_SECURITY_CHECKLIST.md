@@ -41,7 +41,9 @@ Run this checklist before every release to ClawHub/npm.
 
 - [ ] `README.md` reflects current security behavior
 - [ ] `SECURITY.md` includes disclosure process
-- [ ] `MOLTHUB_LISTING_TEMPLATE.md` updated with latest guarantees
+- [ ] `SKILL.md` exists at repo root and imports cleanly in ClawHub
+- [ ] `skill-examples.md` matches current connector behavior
+- [ ] `CLAWHUB_LISTING_TEMPLATE.md` updated with latest guarantees
 - [ ] release notes include security-relevant changes
 
 ## 7) Final publish gate
