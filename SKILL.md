@@ -28,6 +28,12 @@ Do not use this skill for:
 - Canonical event schema only (`agent_status_changed`, `agent_moved_room`, `task_started`, `task_completed`, `room_updated`).
 - Optional HMAC request signing with timestamp skew checks.
 
+## Source-of-truth policy
+
+- Connector implementation changes must be made in this monorepo package: `packages/launchthat-openclaw-connector`.
+- The mirrored `launchthatbot/connect` repo is a distribution mirror, not a primary authoring surface.
+- Use the sync workflow/runbook to propagate updates and avoid multi-writer divergence.
+
 ## Quick setup workflow
 
 1. Create auth link:

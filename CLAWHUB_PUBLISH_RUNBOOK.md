@@ -19,6 +19,13 @@ And mirrored to:
 - Requires repository secret:
   - `CONNECT_REPO_PAT` (PAT with push access to `launchthatbot/connect`)
 
+### Source of truth and writer policy
+
+- **Source of truth repo for connector code is this monorepo path**: `packages/launchthat-openclaw-connector`.
+- The `launchthatbot/connect` repository is a **publish mirror** and should be treated as read-only for feature development.
+- Avoid direct commits to `launchthatbot/connect` to prevent multi-writer drift.
+- If an emergency hotfix is applied in `launchthatbot/connect`, immediately port it back into this monorepo package and re-run sync.
+
 ### One-time bootstrap commands (local)
 
 ```bash
