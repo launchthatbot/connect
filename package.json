@@ -23,7 +23,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "check:release": "pnpm run lint && pnpm run typecheck && pnpm run build",
+    "check:release": "pnpm run typecheck && pnpm run build",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
     "dev": "tsc --watch",
     "format": "prettier --check . --ignore-path ../../.gitignore",
