@@ -14,7 +14,7 @@ And mirrored to:
 
 ### Automated sync (recommended)
 
-- Workflow: `.github/workflows/sync-openclaw-connector-repo.yml`
+- Workflow: `.github/workflows/sync-skill-mirrors.yml`
 - Triggered on `main` pushes that touch the package path.
 - Requires repository secret:
   - `CONNECT_REPO_PAT` (PAT with push access to `launchthatbot/connect`)

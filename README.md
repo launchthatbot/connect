@@ -59,4 +59,4 @@ small local queue on disk if delivery fails and retries with exponential backoff
 
 - Source of truth: monorepo path `packages/launchthat-openclaw-connector`
 - Dedicated public repo mirror: `https://github.com/launchthatbot/connect.git`
-- Automated mirror sync workflow: `.github/workflows/sync-openclaw-connector-repo.yml`
+- Automated mirror sync workflow: `.github/workflows/sync-skill-mirrors.yml`
