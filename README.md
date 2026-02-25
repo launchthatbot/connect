@@ -1,5 +1,9 @@
 # launchthat-openclaw-connector
 
+> [!WARNING]
+> Deprecated: this connector is being phased out in favor of `@launchthatbot/connect-openclaw-plugin`.
+> New integrations should use the plugin only.
+
 ## What is LaunchThatBot
 
 LaunchThatBot is a platform for operating OpenClaw agents with a managed control plane, security defaults, and real-time visibility (including office/org chart style views) while still keeping your agents on your infrastructure.
@@ -9,6 +13,9 @@ LaunchThatBot is a platform for operating OpenClaw agents with a managed control
 `launchthat-openclaw-connector` is for users who want to **keep their existing OpenClaw infrastructure** (existing VPS, local machine, custom Docker setup) and still connect to LaunchThatBot features like live status/office visibility and observability logs.
 
 This is **not** the migration/import path.
+
+This legacy package remains only for backward compatibility while migrations complete.
+For all new installs and ongoing setup, use `@launchthatbot/connect-openclaw-plugin`.
 
 - Use [`import`](https://launchthatbot.com/docs/skills/import) when moving agent runtime into LaunchThatBot-managed infrastructure.
 - Use [`connect`](https://launchthatbot.com/docs/skills/connect) when staying on your own infrastructure and linking telemetry/control signals.

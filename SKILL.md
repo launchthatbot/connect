@@ -1,9 +1,12 @@
 ---
 name: launchthat-openclaw-connector
-description: Connect OpenClaw instances to LaunchThatBot using an auth-link flow and securely stream canonical agent events. Use when setting up OpenClaw visualization, troubleshooting ingest/heartbeat, or enforcing signed payload security.
+description: Deprecated legacy connector skill. Use @launchthatbot/connect-openclaw-plugin for all new LaunchThatBot OpenClaw connect flows with configurable permissions.
 ---
 
 # LaunchThat OpenClaw Connector
+
+> Deprecated: this skill is being phased out.
+> Use `@launchthatbot/connect-openclaw-plugin` instead.
 
 ## When to use this skill
 
