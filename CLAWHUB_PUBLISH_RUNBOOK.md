@@ -17,7 +17,7 @@ And mirrored to:
 - Workflow: `.github/workflows/sync-skill-mirrors.yml`
 - Triggered on `main` pushes that touch the package path.
 - Requires repository secret:
-  - `CONNECT_REPO_PAT` (PAT with push access to `launchthatbot/connect`)
+  - `LAUNCHTHATBOT_REPO_PAT` (PAT with push access to `launchthatbot/connect`, `launchthatbot/import`, `launchthatbot/convex`, and `launchthatbot/git-ops`)
 
 ### Source of truth and writer policy
 
